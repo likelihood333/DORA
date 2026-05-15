@@ -4,60 +4,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!--
+    维护说明：
+    1. 这个文件只负责论文主页内容；页面大小、字体、颜色主要在 static/css/index.css 里。
+    2. 你通常只需要改文字、链接 href、图片/PDF 路径 src。
+    3. 不熟悉 HTML 时，尽量不要改 class="..."，这些 class 负责模板排版。
+  -->
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <!-- 浏览器和搜索引擎用的基础信息：改论文标题、摘要、关键词、作者时同步改这里。 -->
+  <meta name="title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic - Anonymous Author(s)">
+  <!-- description 建议控制在 150-160 个英文字符左右，搜索结果里可能会显示。 -->
+  <meta name="description" content="DORA post-trains dexterous VLA policies with offline RL using a consistency-policy actor and an integrated token-action critic for robust real-robot manipulation.">
+  <!-- keywords 用英文逗号分隔，5-10 个左右即可。 -->
+  <meta name="keywords" content="DORA, dexterous manipulation, vision-language-action models, offline reinforcement learning, robot learning, token-action critic, consistency policy">
+  <!-- 双盲期间保持 Anonymous；公开后可替换成真实作者列表。 -->
+  <meta name="author" content="Anonymous Author(s)">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <!-- 社交平台分享链接时使用的标题、描述和预览图。 -->
+  <meta property="og:site_name" content="WAICA 2026">
+  <meta property="og:title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic">
+  <meta property="og:description" content="Offline RL post-training for dexterous VLA models with a consistency-policy actor and integrated token-action critic.">
+  <!-- 发布到真实网站后，把 # 改成项目主页 URL。 -->
+  <meta property="og:url" content="#">
+  <!-- 分享预览图；最好使用横向图。当前使用真机实验帧。 -->
+  <meta property="og:image" content="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="DORA real-robot dexterous manipulation preview">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Anonymous Author(s)">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Dexterous Manipulation">
+  <meta property="article:tag" content="Offline Reinforcement Learning">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <!-- Twitter/X 分享信息；没有账号时可以保留占位。 -->
+  <meta name="twitter:site" content="@WAICA2026">
+  <meta name="twitter:creator" content="@WAICA2026">
+  <meta name="twitter:title" content="DORA: Dexterous Offline RL for VLA Models">
+  <meta name="twitter:description" content="DORA improves dexterous VLA policies with offline RL: consistency actor plus integrated token-action critic.">
+  <meta name="twitter:image" content="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg">
+  <meta name="twitter:image:alt" content="DORA real-robot dexterous manipulation preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <!-- Google Scholar / citation 工具可能读取这些 citation_* 字段。 -->
+  <meta name="citation_title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic">
+  <meta name="citation_author" content="Anonymous Author(s)">
+  <meta name="citation_author" content="Anonymous Author(s)">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="WAICA 2026">
+  <meta name="citation_pdf_url" content="WAICA2026/samplepaper.tex">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -73,8 +75,8 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <!-- 浏览器标签页标题。 -->
+  <title>DORA | WAICA 2026</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -110,54 +112,55 @@
   <script defer src="static/js/index.js"></script>
   
   <!-- Structured Data for Academic Papers -->
+  <!-- 结构化数据，给搜索引擎理解论文页面用；内容应与上方 meta 和页面正文保持一致。 -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic",
+    "description": "DORA post-trains dexterous VLA policies with offline RL using a consistency-policy actor and an integrated token-action critic.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Zhongxi Chen",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Shanghai Jiao Tong University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Mingzhu Li",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Shanghai Jiao Tong University"
         }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-05-15",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "WAICA 2026"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "#",
+    "image": "WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg",
+    "keywords": ["dexterous manipulation", "vision-language-action models", "offline reinforcement learning", "robot learning", "token-action critic", "consistency policy"],
+    "abstract": "While Vision-Language-Action models excel in dexterous manipulation, applying RL is bottlenecked by Visual Value Hacking under occlusions and credit assignment challenges in high-dimensional generative action spaces. DORA addresses this with a few-step consistency-policy actor and a chunk-level integrated token-action critic aligned with VLM representations and action chunks.",
+    "citation": "@inproceedings{dora2026dexterous, title={{DORA}: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic}, author={Anonymous Author(s)}, booktitle={Proceedings of WAICA}, year={2026}}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "#"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Dexterous Manipulation"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Offline Reinforcement Learning"
       }
     ]
   }
@@ -168,12 +171,12 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "name": "WAICA 2026",
+    "url": "#",
+    "logo": "static/images/favicon.ico",
     "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "#",
+      "#"
     ]
   }
   </script>
@@ -182,122 +185,52 @@
 
 
   <!-- Scroll to Top Button -->
+  <!-- 右下角回到顶部按钮；行为由 static/js/index.js 里的 scrollToTop() 控制。 -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
+  <!-- 顶部 hero：论文标题、作者、单位、按钮。只改文字和 href，不要改 class。 -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <!-- 主页大标题：公开版本可直接换成最终论文标题。 -->
+            <h1 class="title is-1 publication-title">DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
+              <!-- 作者行：双盲期间匿名；公开后把 a 标签里的文字和 href 换成作者名/主页。 -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="#" target="_blank">Zhongxi Chen</a><sup>1,*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="#" target="_blank">Mingzhu Li</a><sup>1,*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="#" target="_blank">Mingzhu Li</a><sup>1,*</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                    <!-- 单位和会议信息  -->
+                    <span class="author-block">Shanghai Jiao Tong University<sup>1</sup><br>WAICA 2026 (Under Review)</span>
+                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
+                         <!-- 顶部按钮：href 是点击后的目标。现在 Paper 指向 TeX，之后可换成 PDF。 -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="#" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>PDF</span>
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
+                  <!-- arXiv 按钮：有 arXiv 后把 href="#" 换成 https://arxiv.org/abs/... -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -305,7 +238,32 @@
                   <span>arXiv</span>
                 </a>
               </span>
+
+                  <!-- Code 按钮：有代码仓库后把 href="#" 换成 GitHub URL。 -->
+                  <span class="link-block">
+                    <a href="#" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code Coming Soon</span>
+                  </a>
+                </span>
+
+                
             </div>
+            <!--
+              Overview teaser figure:
+              这张图会显示在顶部 PDF / arXiv / Code 按钮下面。
+              如果要换成图片版，改 iframe 的 src，或把 iframe 换成 <img src="...">。
+            -->
+            <div class="publication-banner">
+              <iframe src="WAICA2026/figures/dora_teaser.pdf" width="100%" height="550">
+              </iframe>
+            </div>
+            <h2 class="subtitle has-text-centered">
+              DORA improves dexterous VLA policies with token-grounded value learning, moving beyond imitation-only behavior and visually brittle external critics.
+            </h2>
           </div>
         </div>
       </div>
@@ -313,35 +271,17 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- 摘要区：正文可直接从论文 abstract 摘取，但建议控制长度，避免主页太拥挤。 -->
+<section class="section hero is-light" id="abstract">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+          <!-- 这里是主页版摘要，不需要和论文完全逐字一致。 -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            While Vision-Language-Action (VLA) models excel in dexterous manipulation, successful task execution often exhibits multimodality, making reinforcement learning (RL) post-training essential for models to truly understand underlying action intents. However, applying RL is bottlenecked by Visual Value Hacking under severe visual occlusions, alongside credit assignment challenges in generative high-dimensional action spaces. To address this, we propose DORA, an offline RL framework for dexterous VLA models. It leverages a Consistency Policy to drastically shorten the action generation path and introduces a chunk-level Integrated Token-Action Critic. Real-robot experiments show DORA boosts the overall success rate from 40.8% to 60.0% over an imitation-only baseline, with a 25.0 percentage-point improvement on unseen objects and camera occlusion.
           </p>
         </div>
       </div>
@@ -350,127 +290,140 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
+<!-- Method detail figure -->
+<!-- 方法细节图：DexHiL 页面里 Overview 后直接进入实验；这里额外保留 pipeline 作为 DORA 的具体方法图。 -->
+<section class="hero is-small is-light" id="method-overview">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+      <!--文字要改成和abstract一样居中显示-->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- 标题显示在方法图上方。 -->
+      <h2 class="title is-3 has-text-centered">DORA Pipeline</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- 只换 src 即可替换方法图；不建议改 publication-video 这个 class。 -->
+            <iframe src="WAICA2026/figures/dora_pipeline.pdf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End method detail figure -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
+<!-- Real-world experiments -->
+<!-- DexHiL-style 实验区：先给任务 rollout，再给表征分析。 -->
+<section class="hero is-small" id="real-world-experiments">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+      <h2 class="title is-3 has-text-centered">Real-world Experiments</h2>
+      <div class="content has-text-justified">
+        <!-- 这一段是 Fig.3 前的总说明，可按论文 Real-Robot Evidence 段落修改。 -->
+        <p>
+          To complement the quantitative evaluation, we provide representative real-robot rollout sequences. Each row shows temporally ordered frames from one execution episode, covering successful task executions, object-unseen generalization, and a typical failure case.
+        </p>
+      </div>
+
+      <div class="content has-text-centered">
+        <!--
+          Rollout 行维护方法：
+          - 每个 h3 是行标题。
+          - 每个 grid 里固定放 10 张连续帧，对应论文 Fig.3 的一行。
+          - 每行图片后面的 p 是该行说明文字。
+          - 想换某一帧，只改对应 img 的 src；alt 是无障碍描述，可顺手同步修改。
+        -->
+        <h3 class="title is-4">(a) Pick and Place</h3>
+        <!-- 行 (a)：Pick and Place，10 张连续帧。 -->
+        <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_01_8s.jpg" alt="Pick and place rollout frame 1" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_02_9s.jpg" alt="Pick and place rollout frame 2" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_03_10s.jpg" alt="Pick and place rollout frame 3" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg" alt="Pick and place rollout frame 4" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_05_12s.jpg" alt="Pick and place rollout frame 5" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_06_13s.jpg" alt="Pick and place rollout frame 6" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_07_14s.jpg" alt="Pick and place rollout frame 7" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_08_15s.jpg" alt="Pick and place rollout frame 8" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_09_16s.jpg" alt="Pick and place rollout frame 9" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_10_17s.jpg" alt="Pick and place rollout frame 10" loading="lazy"/>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+        <p>A successful Pick and Place rollout, illustrating object approach, grasp establishment, transport, and placement.</p>
+
+        <h3 class="title is-4">(b) Pick Various Toys</h3>
+        <!-- 行 (b)：Pick Various Toys，10 张连续帧。 -->
+        <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_01_4s.jpg" alt="Pick various toys rollout frame 1" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_02_4p22s.jpg" alt="Pick various toys rollout frame 2" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_03_4p44s.jpg" alt="Pick various toys rollout frame 3" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_04_4p67s.jpg" alt="Pick various toys rollout frame 4" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_05_4p89s.jpg" alt="Pick various toys rollout frame 5" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_06_5p11s.jpg" alt="Pick various toys rollout frame 6" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_07_5p33s.jpg" alt="Pick various toys rollout frame 7" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_08_5p56s.jpg" alt="Pick various toys rollout frame 8" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_09_5p78s.jpg" alt="Pick various toys rollout frame 9" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_10_6s.jpg" alt="Pick various toys rollout frame 10" loading="lazy"/>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+        <p>A successful Pick Various Toys rollout, showing adaptation to irregular toy geometry.</p>
+
+        <h3 class="title is-4">(c) Flip Open the Box</h3>
+        <!-- 行 (c)：Flip Open the Box，10 张连续帧。 -->
+        <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_01_28s.jpg" alt="Flip open the box rollout frame 1" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_02_29p33s.jpg" alt="Flip open the box rollout frame 2" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_03_30p67s.jpg" alt="Flip open the box rollout frame 3" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_04_32s.jpg" alt="Flip open the box rollout frame 4" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_05_33p33s.jpg" alt="Flip open the box rollout frame 5" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_06_34p67s.jpg" alt="Flip open the box rollout frame 6" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_07_36s.jpg" alt="Flip open the box rollout frame 7" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_08_37p33s.jpg" alt="Flip open the box rollout frame 8" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_09_38p67s.jpg" alt="Flip open the box rollout frame 9" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_10_40s.jpg" alt="Flip open the box rollout frame 10" loading="lazy"/>
         </div>
+        <p>A Flip Open the Box rollout, demonstrating articulated contact-rich manipulation under strong hand-object occlusion.</p>
+
+        <h3 class="title is-4">(d) Pick Various Toys (Object-Unseen)</h3>
+        <!-- 行 (e)：Object-Unseen，10 张连续帧，用于说明泛化。 -->
+        <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_01_4s.jpg" alt="Pick various toys object-unseen rollout frame 1" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_02_4p5s.jpg" alt="Pick various toys object-unseen rollout frame 2" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_03_5s.jpg" alt="Pick various toys object-unseen rollout frame 3" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_04_5p5s.jpg" alt="Pick various toys object-unseen rollout frame 4" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_05_6s.jpg" alt="Pick various toys object-unseen rollout frame 5" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_06_6p5s.jpg" alt="Pick various toys object-unseen rollout frame 6" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_07_7s.jpg" alt="Pick various toys object-unseen rollout frame 7" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_08_7p5s.jpg" alt="Pick various toys object-unseen rollout frame 8" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_09_8s.jpg" alt="Pick various toys object-unseen rollout frame 9" loading="lazy"/>
+          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_10_8p5s.jpg" alt="Pick various toys object-unseen rollout frame 10" loading="lazy"/>
+        </div>
+        <p>A Pick Various Toys object-unseen rollout, illustrating evaluation on a toy object instance not observed during training.</p>
+      </div>
+
+      <div class="content has-text-justified">
+        <!-- Fig.3 后的总结说明，来自论文 qualitative evidence 描述。 -->
+        <p>
+          These qualitative results demonstrate the policy's capability to dynamically adjust topological grasps in contact-rich real-world manipulation, while also revealing current physical limitations under extreme occlusion or under-actuated grasp maintenance.
+        </p>
+      </div>
+
+      <h2 class="title is-3 has-text-centered">Comparison</h2>
+      <!-- Fig.4：用户提供的整张表征分析图，已保存到 WAICA2026/figures/tsne/。 -->
+      <div class="has-text-centered">
+        <img src="WAICA2026/figures/tsne/fig4_representation_analysis.png" alt="..." loading="lazy"/>
+      </div>      
+      <div class="content has-text-justified">
+        <!-- Fig.4 说明文字，来自论文 analysis 中 Integrated Critic / Visual Value Hacking 的论述。 -->
+        <p>
+          We compare the representation structure between an external critic and DORA. The performance gap directly substantiates the necessity of the Integrated Token-Action Critic: relying on raw image inputs and an independent encoder makes the external critic susceptible to visual value deception, while DORA assigns credit on a grounded physical semantic manifold by coupling chunk-level value estimation with VLM cognition tokens.
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
+<!-- End real-world experiments -->
 
 <!--BibTex citation -->
+<!-- 引用区：改论文标题、作者、会议、年份时同步更新这里。 -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
@@ -480,17 +433,12 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <pre id="bibtex-code"><code>Coming Soon</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
+</main>
 
   <footer class="footer">
   <div class="container">

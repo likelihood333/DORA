@@ -6,3 +6,6 @@ support/*
 !support/figures/**
 
 support/figures/.DS_Store
+
+# Legacy path — do not commit again
+WAICA2026/

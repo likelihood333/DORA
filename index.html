@@ -26,13 +26,14 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- 社交平台分享链接时使用的标题、描述和预览图。 -->
-  <meta property="og:site_name" content="WAICA 2026">
+  <meta property="og:site_name" content="DORA: Dexterous Offline RL for VLA Models">
   <meta property="og:title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic">
   <meta property="og:description" content="Offline RL post-training for dexterous VLA models with a consistency-policy actor and integrated token-action critic.">
-  <!-- 发布到真实网站后，把 # 改成项目主页 URL。 -->
-  <meta property="og:url" content="#">
-  <!-- 分享预览图；最好使用横向图。当前使用真机实验帧。 -->
-  <meta property="og:image" content="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg">
+  <!-- 规范站点根 URL：换 GitHub 用户名/仓库名或绑自定义域名时，改这里与下方 JSON-LD 中的同一串。 -->
+  <link rel="canonical" href="https://likelihood333.github.io/DORA/">
+  <meta property="og:url" content="https://likelihood333.github.io/DORA/">
+  <!-- 分享预览图须用绝对 URL；路径仍对应仓库内 support/figures/... -->
+  <meta property="og:image" content="https://likelihood333.github.io/DORA/support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="DORA real-robot dexterous manipulation preview">
@@ -44,12 +45,10 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Twitter/X 分享信息；没有账号时可以保留占位。 -->
-  <meta name="twitter:site" content="@WAICA2026">
-  <meta name="twitter:creator" content="@WAICA2026">
-  <meta name="twitter:title" content="DORA: Dexterous Offline RL for VLA Models">
+  <!-- 无官方 X 账号时可不填 site/creator。 -->
+  <meta name="twitter:title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic">
   <meta name="twitter:description" content="DORA improves dexterous VLA policies with offline RL: consistency actor plus integrated token-action critic.">
-  <meta name="twitter:image" content="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg">
+  <meta name="twitter:image" content="https://likelihood333.github.io/DORA/support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg">
   <meta name="twitter:image:alt" content="DORA real-robot dexterous manipulation preview">
 
   <!-- Academic/Research Specific -->
@@ -58,8 +57,8 @@
   <meta name="citation_author" content="Anonymous Author(s)">
   <meta name="citation_author" content="Anonymous Author(s)">
   <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="WAICA 2026">
-  <meta name="citation_pdf_url" content="WAICA2026/samplepaper.tex">
+  <meta name="citation_conference_title" content="Under review (2026)">
+  <!-- 公开页不链手稿；有 arXiv/PDF 后再加 citation_pdf_url -->
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -75,8 +74,8 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <!-- 浏览器标签页标题。 -->
-  <title>DORA | WAICA 2026</title>
+  <!-- 浏览器标签页标题：用论文全称（勿与文件夹名 support/ 混淆，后者只是本地路径）。 -->
+  <title>DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -140,18 +139,18 @@
     "datePublished": "2026-05-15",
     "publisher": {
       "@type": "Organization",
-      "name": "WAICA 2026"
+      "name": "DORA"
     },
-    "url": "#",
-    "image": "WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg",
+    "url": "https://likelihood333.github.io/DORA/",
+    "image": "https://likelihood333.github.io/DORA/support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg",
     "keywords": ["dexterous manipulation", "vision-language-action models", "offline reinforcement learning", "robot learning", "token-action critic", "consistency policy"],
     "abstract": "While Vision-Language-Action models excel in dexterous manipulation, applying RL is bottlenecked by Visual Value Hacking under occlusions and credit assignment challenges in high-dimensional generative action spaces. DORA addresses this with a few-step consistency-policy actor and a chunk-level integrated token-action critic aligned with VLM representations and action chunks.",
-    "citation": "@inproceedings{dora2026dexterous, title={{DORA}: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic}, author={Anonymous Author(s)}, booktitle={Proceedings of WAICA}, year={2026}}",
+    "citation": "@inproceedings{dora2026dexterous, title={{DORA}: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic}, author={Anonymous Author(s)}, booktitle={Under review}, year={2026}}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "#"
+      "@id": "https://likelihood333.github.io/DORA/"
     },
     "about": [
       {
@@ -171,9 +170,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "WAICA 2026",
-    "url": "#",
-    "logo": "static/images/favicon.ico",
+    "name": "DORA",
+    "url": "https://likelihood333.github.io/DORA/",
+    "logo": "https://likelihood333.github.io/DORA/static/images/favicon.ico",
     "sameAs": [
       "#",
       "#"
@@ -211,13 +210,9 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- 单位和会议信息  -->
-                    <span class="author-block">Shanghai Jiao Tong University<sup>1</sup><br>WAICA 2026 (Under Review)</span>
-                   </div>
-
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- 顶部按钮：href 是点击后的目标。现在 Paper 指向 TeX，之后可换成 PDF。 -->
+                         <!-- 顶部按钮：有公开 PDF 后把 href 换成链接。 -->
                       <span class="link-block">
                         <a href="#" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -258,7 +253,7 @@
               如果要换成图片版，改 iframe 的 src，或把 iframe 换成 <img src="...">。
             -->
             <div class="publication-banner">
-              <iframe src="WAICA2026/figures/dora_teaser.pdf" width="100%" height="550">
+              <iframe src="support/figures/dora_teaser.pdf" width="100%" height="550">
               </iframe>
             </div>
             <h2 class="subtitle has-text-centered">
@@ -304,7 +299,7 @@
           
           <div class="publication-video">
             <!-- 只换 src 即可替换方法图；不建议改 publication-video 这个 class。 -->
-            <iframe src="WAICA2026/figures/dora_pipeline.pdf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="support/figures/dora_pipeline.pdf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -337,64 +332,64 @@
         <h3 class="title is-4">(a) Pick and Place</h3>
         <!-- 行 (a)：Pick and Place，10 张连续帧。 -->
         <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_01_8s.jpg" alt="Pick and place rollout frame 1" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_02_9s.jpg" alt="Pick and place rollout frame 2" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_03_10s.jpg" alt="Pick and place rollout frame 3" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg" alt="Pick and place rollout frame 4" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_05_12s.jpg" alt="Pick and place rollout frame 5" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_06_13s.jpg" alt="Pick and place rollout frame 6" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_07_14s.jpg" alt="Pick and place rollout frame 7" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_08_15s.jpg" alt="Pick and place rollout frame 8" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_09_16s.jpg" alt="Pick and place rollout frame 9" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_10_17s.jpg" alt="Pick and place rollout frame 10" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_01_8s.jpg" alt="Pick and place rollout frame 1" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_02_9s.jpg" alt="Pick and place rollout frame 2" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_03_10s.jpg" alt="Pick and place rollout frame 3" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg" alt="Pick and place rollout frame 4" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_05_12s.jpg" alt="Pick and place rollout frame 5" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_06_13s.jpg" alt="Pick and place rollout frame 6" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_07_14s.jpg" alt="Pick and place rollout frame 7" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_08_15s.jpg" alt="Pick and place rollout frame 8" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_09_16s.jpg" alt="Pick and place rollout frame 9" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_10_17s.jpg" alt="Pick and place rollout frame 10" loading="lazy"/>
         </div>
         <p>A successful Pick and Place rollout, illustrating object approach, grasp establishment, transport, and placement.</p>
 
         <h3 class="title is-4">(b) Pick Various Toys</h3>
         <!-- 行 (b)：Pick Various Toys，10 张连续帧。 -->
         <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_01_4s.jpg" alt="Pick various toys rollout frame 1" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_02_4p22s.jpg" alt="Pick various toys rollout frame 2" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_03_4p44s.jpg" alt="Pick various toys rollout frame 3" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_04_4p67s.jpg" alt="Pick various toys rollout frame 4" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_05_4p89s.jpg" alt="Pick various toys rollout frame 5" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_06_5p11s.jpg" alt="Pick various toys rollout frame 6" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_07_5p33s.jpg" alt="Pick various toys rollout frame 7" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_08_5p56s.jpg" alt="Pick various toys rollout frame 8" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_09_5p78s.jpg" alt="Pick various toys rollout frame 9" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_10_6s.jpg" alt="Pick various toys rollout frame 10" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_01_4s.jpg" alt="Pick various toys rollout frame 1" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_02_4p22s.jpg" alt="Pick various toys rollout frame 2" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_03_4p44s.jpg" alt="Pick various toys rollout frame 3" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_04_4p67s.jpg" alt="Pick various toys rollout frame 4" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_05_4p89s.jpg" alt="Pick various toys rollout frame 5" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_06_5p11s.jpg" alt="Pick various toys rollout frame 6" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_07_5p33s.jpg" alt="Pick various toys rollout frame 7" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_08_5p56s.jpg" alt="Pick various toys rollout frame 8" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_09_5p78s.jpg" alt="Pick various toys rollout frame 9" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys/pick-various-toys_frame_10_6s.jpg" alt="Pick various toys rollout frame 10" loading="lazy"/>
         </div>
         <p>A successful Pick Various Toys rollout, showing adaptation to irregular toy geometry.</p>
 
         <h3 class="title is-4">(c) Flip Open the Box</h3>
         <!-- 行 (c)：Flip Open the Box，10 张连续帧。 -->
         <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_01_28s.jpg" alt="Flip open the box rollout frame 1" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_02_29p33s.jpg" alt="Flip open the box rollout frame 2" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_03_30p67s.jpg" alt="Flip open the box rollout frame 3" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_04_32s.jpg" alt="Flip open the box rollout frame 4" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_05_33p33s.jpg" alt="Flip open the box rollout frame 5" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_06_34p67s.jpg" alt="Flip open the box rollout frame 6" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_07_36s.jpg" alt="Flip open the box rollout frame 7" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_08_37p33s.jpg" alt="Flip open the box rollout frame 8" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_09_38p67s.jpg" alt="Flip open the box rollout frame 9" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_10_40s.jpg" alt="Flip open the box rollout frame 10" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_01_28s.jpg" alt="Flip open the box rollout frame 1" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_02_29p33s.jpg" alt="Flip open the box rollout frame 2" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_03_30p67s.jpg" alt="Flip open the box rollout frame 3" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_04_32s.jpg" alt="Flip open the box rollout frame 4" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_05_33p33s.jpg" alt="Flip open the box rollout frame 5" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_06_34p67s.jpg" alt="Flip open the box rollout frame 6" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_07_36s.jpg" alt="Flip open the box rollout frame 7" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_08_37p33s.jpg" alt="Flip open the box rollout frame 8" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_09_38p67s.jpg" alt="Flip open the box rollout frame 9" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/flip_open_box/flip-open-box_frame_10_40s.jpg" alt="Flip open the box rollout frame 10" loading="lazy"/>
         </div>
         <p>A Flip Open the Box rollout, demonstrating articulated contact-rich manipulation under strong hand-object occlusion.</p>
 
         <h3 class="title is-4">(d) Pick Various Toys (Object-Unseen)</h3>
         <!-- 行 (e)：Object-Unseen，10 张连续帧，用于说明泛化。 -->
         <div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.35rem;">
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_01_4s.jpg" alt="Pick various toys object-unseen rollout frame 1" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_02_4p5s.jpg" alt="Pick various toys object-unseen rollout frame 2" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_03_5s.jpg" alt="Pick various toys object-unseen rollout frame 3" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_04_5p5s.jpg" alt="Pick various toys object-unseen rollout frame 4" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_05_6s.jpg" alt="Pick various toys object-unseen rollout frame 5" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_06_6p5s.jpg" alt="Pick various toys object-unseen rollout frame 6" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_07_7s.jpg" alt="Pick various toys object-unseen rollout frame 7" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_08_7p5s.jpg" alt="Pick various toys object-unseen rollout frame 8" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_09_8s.jpg" alt="Pick various toys object-unseen rollout frame 9" loading="lazy"/>
-          <img src="WAICA2026/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_10_8p5s.jpg" alt="Pick various toys object-unseen rollout frame 10" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_01_4s.jpg" alt="Pick various toys object-unseen rollout frame 1" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_02_4p5s.jpg" alt="Pick various toys object-unseen rollout frame 2" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_03_5s.jpg" alt="Pick various toys object-unseen rollout frame 3" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_04_5p5s.jpg" alt="Pick various toys object-unseen rollout frame 4" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_05_6s.jpg" alt="Pick various toys object-unseen rollout frame 5" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_06_6p5s.jpg" alt="Pick various toys object-unseen rollout frame 6" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_07_7s.jpg" alt="Pick various toys object-unseen rollout frame 7" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_08_7p5s.jpg" alt="Pick various toys object-unseen rollout frame 8" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_09_8s.jpg" alt="Pick various toys object-unseen rollout frame 9" loading="lazy"/>
+          <img src="support/figures/real_robot_evidence/pick_various_toys_unseen/pick-various-toys-unseen_frame_10_8p5s.jpg" alt="Pick various toys object-unseen rollout frame 10" loading="lazy"/>
         </div>
         <p>A Pick Various Toys object-unseen rollout, illustrating evaluation on a toy object instance not observed during training.</p>
       </div>
@@ -407,9 +402,9 @@
       </div>
 
       <h2 class="title is-3 has-text-centered">Comparison</h2>
-      <!-- Fig.4：用户提供的整张表征分析图，已保存到 WAICA2026/figures/tsne/。 -->
+      <!-- Fig.4：用户提供的整张表征分析图，已保存到 support/figures/tsne/。 -->
       <div class="has-text-centered">
-        <img src="WAICA2026/figures/tsne/fig4_representation_analysis.png" alt="..." loading="lazy"/>
+        <img src="support/figures/tsne/fig4_representation_analysis.png" alt="..." loading="lazy"/>
       </div>      
       <div class="content has-text-justified">
         <!-- Fig.4 说明文字，来自论文 analysis 中 Integrated Critic / Visual Value Hacking 的论述。 -->

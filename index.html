@@ -13,13 +13,12 @@
 
   <!-- Primary Meta Tags -->
   <!-- 浏览器和搜索引擎用的基础信息：改论文标题、摘要、关键词、作者时同步改这里。 -->
-  <meta name="title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic - Anonymous Author(s)">
+  <meta name="title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic">
   <!-- description 建议控制在 150-160 个英文字符左右，搜索结果里可能会显示。 -->
   <meta name="description" content="DORA post-trains dexterous VLA policies with offline RL using a consistency-policy actor and an integrated token-action critic for robust real-robot manipulation.">
   <!-- keywords 用英文逗号分隔，5-10 个左右即可。 -->
   <meta name="keywords" content="DORA, dexterous manipulation, vision-language-action models, offline reinforcement learning, robot learning, token-action critic, consistency policy">
-  <!-- 双盲期间保持 Anonymous；公开后可替换成真实作者列表。 -->
-  <meta name="author" content="Anonymous Author(s)">
+  <meta name="author" content="Zhongxi Chen, Huanming Liu, Mingzhu Li, Yanming Shao, Xiaoyu Chen, Yao Mu">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -38,7 +37,12 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="DORA real-robot dexterous manipulation preview">
   <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
-  <meta property="article:author" content="Anonymous Author(s)">
+  <meta property="article:author" content="Zhongxi Chen">
+  <meta property="article:author" content="Huanming Liu">
+  <meta property="article:author" content="Mingzhu Li">
+  <meta property="article:author" content="Yanming Shao">
+  <meta property="article:author" content="Xiaoyu Chen">
+  <meta property="article:author" content="Yao Mu">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="Dexterous Manipulation">
   <meta property="article:tag" content="Offline Reinforcement Learning">
@@ -54,8 +58,12 @@
   <!-- Academic/Research Specific -->
   <!-- Google Scholar / citation 工具可能读取这些 citation_* 字段。 -->
   <meta name="citation_title" content="DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic">
-  <meta name="citation_author" content="Anonymous Author(s)">
-  <meta name="citation_author" content="Anonymous Author(s)">
+  <meta name="citation_author" content="Chen, Zhongxi">
+  <meta name="citation_author" content="Liu, Huanming">
+  <meta name="citation_author" content="Li, Mingzhu">
+  <meta name="citation_author" content="Shao, Yanming">
+  <meta name="citation_author" content="Chen, Xiaoyu">
+  <meta name="citation_author" content="Mu, Yao">
   <meta name="citation_publication_date" content="2026">
   <!-- 公开页不链手稿；有 arXiv/PDF 后再加 citation_pdf_url -->
   
@@ -123,7 +131,15 @@
         "name": "Zhongxi Chen",
         "affiliation": {
           "@type": "Organization",
-          "name": "Shanghai Jiao Tong University"
+          "name": "SJTU"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Huanming Liu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "USTC"
         }
       },
       {
@@ -131,8 +147,33 @@
         "name": "Mingzhu Li",
         "affiliation": {
           "@type": "Organization",
-          "name": "Shanghai Jiao Tong University"
+          "name": "SJTU"
         }
+      },
+      {
+        "@type": "Person",
+        "name": "Yanming Shao",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Shanghai AI Laboratory"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Xiaoyu Chen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "SJTU"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Yao Mu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "SJTU"
+        },
+        "roleName": "Corresponding author"
       }
     ],
     "datePublished": "2026-05-15",
@@ -144,7 +185,7 @@
     "image": "https://likelihood333.github.io/DORA/support/figures/real_robot_evidence/pick_and_place/pick-and-place_frame_04_11s.jpg",
     "keywords": ["dexterous manipulation", "vision-language-action models", "offline reinforcement learning", "robot learning", "token-action critic", "consistency policy"],
     "abstract": "While Vision-Language-Action models excel in dexterous manipulation, applying RL is bottlenecked by Visual Value Hacking under occlusions and credit assignment challenges in high-dimensional generative action spaces. DORA addresses this with a few-step consistency-policy actor and a chunk-level integrated token-action critic aligned with VLM representations and action chunks.",
-    "citation": "@inproceedings{dora2026dexterous, title={{DORA}: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic}, author={Anonymous Author(s)}, booktitle={To appear}, year={2026}}",
+    "citation": "@inproceedings{dora2026dexterous, title={{DORA}: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic}, author={Chen, Zhongxi and Liu, Huanming and Li, Mingzhu and Shao, Yanming and Chen, Xiaoyu and Mu, Yao}, booktitle={To appear}, year={2026}}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
@@ -198,17 +239,35 @@
             <!-- 主页大标题：公开版本可直接换成最终论文标题。 -->
             <h1 class="title is-1 publication-title">DORA: Dexterous Offline Reinforcement Learning for Vision-Language-Action Models with Integrated Token-Action Critic</h1>
             <div class="is-size-5 publication-authors">
-              <!-- 作者行：双盲期间匿名；公开后把 a 标签里的文字和 href 换成作者名/主页。 -->
               <span class="author-block">
                 <a href="#" target="_blank">Zhongxi Chen</a><sup>1,*</sup>,</span>
-                <span class="author-block">
-                  <a href="#" target="_blank">Mingzhu Li</a><sup>1,*</sup>
-                </span>
+              <span class="author-block">
+                <a href="#" target="_blank">Huanming Liu</a><sup>3,*</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Mingzhu Li</a><sup>1,*</sup>
+              </span>
             </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Shanghai Jiao Tong University<sup>1</sup></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="#" target="_blank">Yanming Shao</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Xiaoyu Chen</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Yao Mu</a><sup>1,**</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> SJTU</span>
+              <span class="author-block"><sup>2</sup> Shanghai AI Laboratory</span>
+              <span class="author-block"><sup>3</sup> USTC</span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup> Equal contribution</span>
+              <span class="author-block"><sup>**</sup> Corresponding author</span>
+            </div>
 
                     <div class="publication-links">
                          <!-- 顶部按钮：有公开 PDF 后把 href 换成链接。 -->
@@ -222,16 +281,15 @@
                       </a>
                     </span>
 
-                  <!-- arXiv 按钮：有 arXiv 后把 href="#" 换成 https://arxiv.org/abs/... -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv coming soon </span>
                 </a>
-              </span>
+              </span> -->
 
                   <!-- Code 按钮：有代码仓库后把 href="#" 换成 GitHub URL。 -->
                   <span class="link-block">
